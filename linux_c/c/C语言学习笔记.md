@@ -166,6 +166,27 @@
     - 不是c标准库函数, 是gnu-libc库函数;
     - 函数原型: ssize_t getline(char **restrict lineptr, size_t *restrict n, FILE *restrict stream);
 ## 4. 流程控制
-1. 顺序结构:
-2. 选择结构:
-3. 循环结构:
+1. 关键字: if, else, switch, case, default, while, do, for, break, continue, goto;
+2. 详解if-else:
+    - 格式: if(expr) {cmd;}
+    - 注意: else只与最近的if匹配;
+3. 详解switch-case:
+    - 语法: switch(expr) { case 常量表达式: break; default: break;}
+4. while和do-while:
+    - do-while至少执行一次;
+5. goto实现的是无条件的跳转, 且不能跨函数跳转;
+## 5. 数组
+### 5.1 一维数组
+1. 定义: 
+    - [存储类型] 数据类型 标识符[整数常量表达式/VLA变长];
+    - 连续地址空间;
+2. 初始化:
+    - 默认初始化(不初始化);
+    - {}初始化;
+    - 部分初始化;
+3. 元素引用:
+    - 引用方式: 数组名[];
+4. 数组名
+5. 数据越界
+### 5.2 二维数组
+### 5.3 字符数组
